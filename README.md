@@ -48,26 +48,26 @@ console.log('\n');
 var xpub = 'tpubDE9d2eQdaQrwREoNYVm63BH1TQz5XYizB3rMxeJpFsfxxzXzNGCrguxaip9shs9TLahkfvgQPNWdKXvWqCqWgKk5SxT9wuFtLQg7RQvRsTV'
 var account1 = new BIP86.fromXPub(xpub)
 
-console.log("Account 1, root = m/86'/0'/1'");
+console.log("Account 1, root = m/86'/1'/0'");
 console.log('Account 1 xpub:', account1.getAccountPublicKey());
 console.log('\n');
 
-console.log("Account 1, first receiving address = m/86'/0'/1'/0/0");
+console.log("Account 1, first receiving address = m/86'/1'/0'/0/0");
 console.log('Pubkey:', account1.getPublicKey(0))
 console.log('Address:', account1.getAddress(0))
 console.log('\n');
 
-console.log("Account 1, second receiving address = m/86'/0'/1'/0/1");
+console.log("Account 1, second receiving address = m/86'/1'/0'/0/1");
 console.log('Pubkey:', account1.getPublicKey(1))
 console.log('Address:', account1.getAddress(1))
 console.log('\n');
 
-console.log("Account 1, first change address = m/86'/0'/1'/1/0");
+console.log("Account 1, first change address = m/86'/1'/0'/1/0");
 console.log('Pubkey:', account1.getPublicKey(0, true))
 console.log('Address:', account1.getAddress(0, true))
 console.log('\n');
 
-console.log("Account 1, second change address = m/86'/0'/1'/1/1");
+console.log("Account 1, second change address = m/86'/1'/0'/1/1");
 console.log('Pubkey:', account1.getPublicKey(1, true))
 console.log('Address:', account1.getAddress(1, true))
 console.log('\n');
