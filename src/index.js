@@ -1,7 +1,7 @@
 const { networks } = require('bitcoinjs-lib')
 const bip39 = require('bip39')
 const bitcoinNetworks = { mainnet: networks.bitcoin, testnet: networks.testnet }
-const BIP32Factory = require('bip32').default
+const { BIP32Factory } = require('bip32')
 const ecurve = require('ecurve')
 const secp256k1 = ecurve.getCurveByName('secp256k1')
 const schnorr = require('bip-schnorr')
