@@ -1,6 +1,6 @@
 {
   "name": "bip86",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "BIP86 - Derives taproot addresses from seed, xprv/xpub and tprv/tpub in javascript",
   "main": "./src/index.js",
   "repository": {
