@@ -5,9 +5,8 @@ const { BIP32Factory } = require('bip32')
 const ecurve = require('ecurve')
 const secp256k1 = ecurve.getCurveByName('secp256k1')
 const schnorr = require('bip-schnorr')
-const bech32 = require('bech32').bech32
-const bech32m = require('bech32').bech32m
-const ecc = require('tiny-secp256k1');
+const { bech32, bech32m } = require('bech32')
+const ecc = require('@bitcoinerlab/secp256k1');
 const bip32 = BIP32Factory(ecc);
 
 /**
